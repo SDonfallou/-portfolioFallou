@@ -1,56 +1,56 @@
-/* Minimal hero similar to jameswilliams.design */
 "use client";
 
-function scrollToId(id: string) {
-  if (typeof window === "undefined") return;
-  const el = document.getElementById(id);
-  el?.scrollIntoView({ behavior: "smooth" });
-}
+import Image from "next/image";
 
 export function HeroSection() {
   return (
-    <section className="mx-auto max-w-5xl px-6 pt-16 pb-20 sm:pt-24">
-      <p className="text-xs font-semibold uppercase tracking-[0.3em] text-zinc-500">
-        Fallou Sow
-      </p>
+    <section className="relative min-h-screen bg-zinc-950 text-zinc-50 flex items-center justify-center px-6 py-16">
+      {/* Profile Photo in top left */}
+      <div className="absolute top-8 left-8 w-12 h-12 rounded-full overflow-hidden border-2 border-zinc-700">
+        <Image
+          src="/profile.jpg"
+          alt="Profile"
+          width={48}
+          height={48}
+          className="w-full h-full object-cover"
+        />
+      </div>
 
-      <h1 className="mt-4 text-4xl font-semibold tracking-tight text-zinc-50 sm:text-5xl md:text-6xl">
-        Full‑stack developer
-      </h1>
+      <div className="max-w-5xl w-full flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+        {/* Left: Text content */}
+        <div className="flex-1 text-center lg:text-left">
+          <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold tracking-tight leading-tight">
+            <span className="text-white">FALLOU</span>
+            {" "}
+            <span className="bg-gradient-to-r from-pink-300 to-pink-500 bg-clip-text text-transparent">
+              SOW
+            </span>
+          </h1>
 
-      <p className="mt-4 max-w-xl text-sm leading-relaxed text-zinc-400 sm:text-base">
-        Full‑stack developer specializing in .NET, React &amp; cloud‑native solutions.
-        I build scalable, maintainable products with a focus on clear UX and clean code.
-      </p>
+          <p className="mt-6 text-lg sm:text-xl text-zinc-400 font-light">
+            Web Designer / Developer
+          </p>
 
-      <p className="mt-3 text-xs font-medium text-zinc-500">
-        .NET • React • AWS • SQL • CI/CD
-      </p>
+          <a
+            href="#contact"
+            className="inline-block mt-10 px-6 py-3 border-2 border-zinc-300 text-zinc-50 font-medium rounded-full hover:bg-zinc-50 hover:text-zinc-950 transition-colors"
+          >
+            Get in touch →
+          </a>
+        </div>
 
-      <div className="mt-8 flex flex-wrap gap-4 text-sm">
-        <button
-          type="button"
-          onClick={() => scrollToId("projects")}
-          className="font-medium text-zinc-50 underline underline-offset-4 hover:text-zinc-300"
-        >
-          View projects →
-        </button>
-        <a
-          href="https://github.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="font-medium text-zinc-50 underline underline-offset-4 hover:text-zinc-300"
-        >
-          GitHub
-        </a>
-        <a
-          href="https://linkedin.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="font-medium text-zinc-50 underline underline-offset-4 hover:text-zinc-300"
-        >
-          LinkedIn
-        </a>
+        {/* Right: Large profile image */}
+        <div className="flex-1 flex justify-center lg:justify-end">
+          <div className="relative w-64 h-80 sm:w-72 sm:h-96 rounded-3xl overflow-hidden">
+            <Image
+              src="/profile.jpg"
+              alt="Fallou Sow"
+              fill
+              className="object-cover"
+              priority
+            />
+          </div>
+        </div>
       </div>
     </section>
   );
