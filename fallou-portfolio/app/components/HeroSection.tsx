@@ -1,56 +1,56 @@
+/* Minimal hero similar to jameswilliams.design */
+"use client";
+
+function scrollToId(id: string) {
+  if (typeof window === "undefined") return;
+  const el = document.getElementById(id);
+  el?.scrollIntoView({ behavior: "smooth" });
+}
+
 export function HeroSection() {
   return (
-    <section className="mx-auto max-w-5xl px-6 py-24 sm:py-32 lg:py-40">
-      <div className="text-center">
-        <div className="mb-6 inline-block">
-          <span className="relative inline-block">
-            <h1 className="relative text-5xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 sm:text-6xl md:text-7xl lg:text-8xl">
-              Fallou Sow
-            </h1>
-            <span className="absolute -inset-1 block rounded-lg bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 opacity-20 blur-xl" />
-          </span>
-        </div>
-        <p className="mx-auto mt-6 max-w-2xl text-xl text-zinc-600 dark:text-zinc-300 sm:text-2xl">
-          Full‑stack developer specializing in{" "}
-          <span className="font-semibold text-zinc-900 dark:text-zinc-100">.NET</span>,{" "}
-          <span className="font-semibold text-zinc-900 dark:text-zinc-100">React</span> &{" "}
-          <span className="font-semibold text-zinc-900 dark:text-zinc-100">cloud‑native</span> solutions
-        </p>
-        <div className="mt-6 flex flex-wrap items-center justify-center gap-3 text-sm font-medium text-zinc-500 dark:text-zinc-400 sm:text-base">
-          {[".NET", "React", "AWS", "SQL", "CI/CD"].map((tech) => (
-            <span
-              key={tech}
-              className="rounded-full bg-white px-4 py-1.5 shadow-sm ring-1 ring-zinc-200 dark:bg-zinc-800 dark:ring-zinc-700"
-            >
-              {tech}
-            </span>
-          ))}
-        </div>
-        <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-          <a
-            href="#projects"
-            className="group relative overflow-hidden rounded-xl bg-gradient-to-r from-blue-600 to-purple-600 px-8 py-4 text-sm font-semibold text-white shadow-lg shadow-blue-500/50 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-blue-500/50"
-          >
-            <span className="relative z-10">View Projects</span>
-            <span className="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-          </a>
-          <a
-            href="https://github.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group rounded-xl border-2 border-zinc-300 bg-white px-8 py-4 text-sm font-semibold text-zinc-700 transition-all duration-300 hover:border-zinc-400 hover:bg-zinc-50 hover:shadow-lg dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-300 dark:hover:border-zinc-600 dark:hover:bg-zinc-700"
-          >
-            GitHub
-          </a>
-          <a
-            href="https://linkedin.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group rounded-xl border-2 border-zinc-300 bg-white px-8 py-4 text-sm font-semibold text-zinc-700 transition-all duration-300 hover:border-zinc-400 hover:bg-zinc-50 hover:shadow-lg dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-300 dark:hover:border-zinc-600 dark:hover:bg-zinc-700"
-          >
-            LinkedIn
-          </a>
-        </div>
+    <section className="mx-auto max-w-4xl px-6 pt-16 pb-20 sm:pt-24">
+      <p className="text-xs font-semibold uppercase tracking-[0.3em] text-zinc-500">
+        Fallou Sow
+      </p>
+
+      <h1 className="mt-4 text-4xl font-semibold tracking-tight text-zinc-900 sm:text-5xl md:text-6xl">
+        Full‑stack developer
+      </h1>
+
+      <p className="mt-4 max-w-xl text-sm leading-relaxed text-zinc-600 sm:text-base">
+        Full‑stack developer specializing in .NET, React &amp; cloud‑native solutions.
+        I build scalable, maintainable products with a focus on clear UX and clean code.
+      </p>
+
+      <p className="mt-3 text-xs font-medium text-zinc-500">
+        .NET • React • AWS • SQL • CI/CD
+      </p>
+
+      <div className="mt-8 flex flex-wrap gap-4 text-sm">
+        <button
+          type="button"
+          onClick={() => scrollToId("projects")}
+          className="font-medium text-zinc-900 underline underline-offset-4 hover:text-zinc-600"
+        >
+          View projects →
+        </button>
+        <a
+          href="https://github.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-medium text-zinc-900 underline underline-offset-4 hover:text-zinc-600"
+        >
+          GitHub
+        </a>
+        <a
+          href="https://linkedin.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-medium text-zinc-900 underline underline-offset-4 hover:text-zinc-600"
+        >
+          LinkedIn
+        </a>
       </div>
     </section>
   );
