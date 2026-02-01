@@ -9,26 +9,33 @@ export function ContactSection() {
         to reach out.
       </p>
 
-      <div className="flex flex-col gap-2 text-sm text-zinc-900">
+      <div className="flex flex-col gap-2 text-sm text-zinc-600">
         <a
-          href="mailto:your.email@example.com"
-          className="underline underline-offset-4 hover:text-zinc-600"
+          href="mailto:littlefallou@gmail.com"
+          className="underline underline-offset-4 hover:text-zinc-500"
         >
-          your.email@example.com
+          littlefallou@gmail.com
         </a>
         <a
-          href="https://linkedin.com"
+          href="tel:+4745558697"
+          className="underline underline-offset-4 hover:text-zinc-500"
+        >
+          +47 45558697
+        </a>
+        <p className="text-zinc-600">📍 Oslo, Norway</p>
+        <a
+          href="https://linkedin.com/in/falousow"
           target="_blank"
           rel="noopener noreferrer"
-          className="underline underline-offset-4 hover:text-zinc-600"
+          className="underline underline-offset-4 hover:text-zinc-500"
         >
           LinkedIn
         </a>
         <a
-          href="https://github.com"
+          href="https://github.com/falousow"
           target="_blank"
           rel="noopener noreferrer"
-          className="underline underline-offset-4 hover:text-zinc-600"
+          className="underline underline-offset-4 hover:text-zinc-500"
         >
           GitHub
         </a>

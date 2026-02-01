@@ -3,25 +3,25 @@ export function TechStackSection() {
     {
       icon: "⚙️",
       title: "Backend",
-      description: "C# (.NET 6/7), REST APIs, authentication & authorization.",
+      description: "C# (.NET 6/7), Java Spring, REST APIs, authentication & authorization, microservices architecture.",
       color: "from-blue-500 to-cyan-500",
     },
     {
       icon: "🎨",
       title: "Frontend",
-      description: "React / Next.js, Tailwind CSS, responsive & accessible UI.",
+      description: "React, Next.js, TypeScript, JavaScript, Tailwind CSS, responsive & accessible UI.",
       color: "from-purple-500 to-pink-500",
     },
     {
       icon: "☁️",
       title: "Cloud & DevOps",
-      description: "AWS (EC2, Lambda, S3, RDS), CI/CD with GitHub Actions, FinOps basics.",
+      description: "AWS (EC2, Lambda, S3, RDS), CI/CD with GitHub Actions, AWS Cloud Practitioner certified.",
       color: "from-orange-500 to-red-500",
     },
     {
       icon: "🗄️",
       title: "Database",
-      description: "SQL Server, PostgreSQL.",
+      description: "SQL Server, PostgreSQL, relational database design and optimization.",
       color: "from-green-500 to-emerald-500",
     },
   ];

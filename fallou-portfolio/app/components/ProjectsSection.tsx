@@ -15,64 +15,84 @@ type Project = {
 
 const projects: Project[] = [
   {
-    id: "fullstack-app",
-    title: "E‑Commerce Management Platform",
-    oneLiner: "Inventory, orders and reporting for growing retail teams.",
+    id: "wesync",
+    title: "WeSync — Full-Stack Development (2015–Present)",
+    oneLiner: "Long-term full-stack development and cloud infrastructure projects.",
     overview:
-      "Full‑stack business application that centralises products, stock and orders so non‑technical teams can manage operations without spreadsheets.",
+      "Over 11 years of continuous full-stack development at WeSync in Bologna, building and maintaining scalable web applications and backend services using .NET, React, and cloud technologies.",
     tech: {
-      backend: ".NET 7 (REST APIs)",
-      frontend: "React + TypeScript",
+      backend: "C# .NET, REST APIs",
+      frontend: "React / TypeScript",
+      database: "SQL Server, PostgreSQL",
+      cloud: "AWS Cloud Services",
+    },
+    features: [
+      "Engineered multiple SaaS platforms and enterprise applications from conception to production.",
+      "Designed and implemented CI/CD workflows for continuous integration and automated deployments.",
+      "Optimized system performance and cloud infrastructure for scalability and cost efficiency.",
+    ],
+    challenge:
+      "Maintained code quality and system reliability across diverse projects while mentoring junior developers and adapting to evolving technology stacks and business requirements.",
+  },
+  {
+    id: "bequalise",
+    title: "Bequalise App — SaaS Platform",
+    oneLiner: "Innovation management platform for startups.",
+    overview:
+      "Full‑stack SaaS platform developed at AriesTech that enables startups to manage innovation initiatives, track progress, and collaborate on strategic goals.",
+    tech: {
+      backend: ".NET 6 (REST APIs)",
+      frontend: "React / TypeScript",
       database: "SQL Server",
       cloud: "AWS (EC2, RDS)",
     },
     features: [
-      "Real‑time inventory tracking with low‑stock alerts for store managers.",
-      "Role‑based authentication with JWT and granular permissions.",
-      "Optimised queries and caching to reduce page load times by ~60%.",
+      "Seamless integration between .NET backend APIs and React/TypeScript frontend.",
+      "CI/CD workflows enabling automated testing and zero‑downtime deployments.",
+      "Cloud-optimized architecture for scalability and cost efficiency.",
     ],
     challenge:
-      "Designed pagination and caching strategies for large catalogues while keeping the API simple. Used React Query to avoid over‑fetching and keep the UI feeling instant.",
+      "Collaborated with UX designers and product managers to convert complex business requirements into robust, maintainable solutions while ensuring platform scalability and performance.",
   },
   {
-    id: "cloud-pipeline",
-    title: "Serverless Data Processing Pipeline",
-    oneLiner: "Automated ingest, transform and store for data files.",
+    id: "innovation-match",
+    title: "Innovation Match — SaaS Platform",
+    oneLiner: "Matchmaking platform connecting innovation stakeholders.",
     overview:
-      "Serverless workflow that processes uploaded files, transforms them and stores results with alerts when something fails.",
+      "SaaS platform that facilitates innovation management by matching startups with resources, mentors, and investors to accelerate growth.",
     tech: {
-      backend: "AWS Lambda (Python)",
-      frontend: "Lightweight React admin view",
-      database: "DynamoDB",
-      cloud: "AWS (S3, Step Functions)",
+      backend: ".NET 6 (REST APIs)",
+      frontend: "React / TypeScript",
+      database: "SQL Server",
+      cloud: "AWS Cloud Infrastructure",
     },
     features: [
-      "Event‑driven processing with retries and dead‑letter handling.",
-      "GitHub Actions pipelines for zero‑downtime deployments.",
-      "Cost‑aware design that scales down to near‑zero when idle.",
+      "Intelligent matching algorithm connecting startups with relevant opportunities.",
+      "Responsive design ensuring accessibility across devices.",
+      "Optimized system performance through strategic caching and query optimization.",
     ],
     challenge:
-      "Balanced observability and cost by combining CloudWatch metrics with structured logging while keeping the architecture simple enough for small teams to own.",
+      "Prioritized cloud scalability and cost optimization by leveraging AWS best practices while maintaining code quality and system maintainability across the full stack.",
   },
   {
-    id: "ui-dashboard",
-    title: "Interactive Analytics Dashboard",
-    oneLiner: "Clean, responsive UI for product and operations insights.",
+    id: "enterprise-backend",
+    title: "Enterprise Backend Services — Java Spring",
+    oneLiner: "Scalable backend infrastructure for enterprise applications.",
     overview:
-      "Frontend‑only dashboard that visualises KPIs, trends and cohorts with a focus on readability and accessibility.",
+      "Backend services built with Java Spring Framework supporting enterprise-scale applications, featuring robust API design, authentication, and data persistence.",
     tech: {
-      backend: "REST APIs (existing services)",
-      frontend: "Next.js + React",
-      database: "Existing analytics warehouse",
-      cloud: "Deployed on Vercel / AWS",
+      backend: "Java Spring Framework",
+      frontend: "REST API Consumers",
+      database: "Relational Databases",
+      cloud: "Enterprise Infrastructure",
     },
     features: [
-      "Responsive layout that works equally well on laptop and mobile.",
-      "Accessible interactions (keyboard support, focus states, ARIA labelling).",
-      "Lazy‑loaded charts and sections to keep the initial load fast.",
+      "RESTful API design following enterprise standards and best practices.",
+      "Role-based authentication and authorization mechanisms.",
+      "Optimized database queries and connection pooling for high throughput.",
     ],
     challenge:
-      "Implemented virtualised lists and memoised chart components to keep interactions smooth when rendering large data sets.",
+      "Designed and implemented backend services tailored to support enterprise-scale applications with emphasis on reliability, security, and performance at scale.",
   },
 ];
 
