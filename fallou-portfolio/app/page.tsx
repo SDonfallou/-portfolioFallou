@@ -3,7 +3,7 @@ import { IntroSection } from "./components/IntroSection";
 import { ClientsSection } from "./components/ClientsSection";
 import { ProjectsSection } from "./components/ProjectsSection";
 import { TechStackSection } from "./components/TechStackSection";
-import { AboutSection } from "./components/AboutSection";
+import { CertificatesSection } from "./components/CertificatesSection";
 import { ContactSection } from "./components/ContactSection";
 import { SiteFooter } from "./components/SiteFooter";
 
@@ -15,7 +15,7 @@ export default function Home() {
       <ClientsSection />
       <ProjectsSection />
       <TechStackSection />
-      <AboutSection />
+      <CertificatesSection />
       <ContactSection />
       <SiteFooter />
     </div>
