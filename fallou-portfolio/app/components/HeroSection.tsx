@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Image from "next/image";
 
@@ -35,7 +35,7 @@ export function HeroSection() {
             href="#contact"
             className="inline-block mt-10 px-6 py-3 border-2 border-zinc-300 text-zinc-50 font-medium rounded-full hover:bg-zinc-50 hover:text-zinc-950 transition-colors"
           >
-            Get in touch →
+            Get in touch {"\u2192"}
           </a>
         </div>
 
@@ -55,4 +55,5 @@ export function HeroSection() {
     </section>
   );
 }
+
 

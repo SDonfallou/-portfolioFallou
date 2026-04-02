@@ -1,4 +1,4 @@
-type Project = {
+﻿type Project = {
   id: string;
   title: string;
   oneLiner: string;
@@ -15,84 +15,104 @@ type Project = {
 
 const projects: Project[] = [
   {
-    id: "wesync",
-    title: "WeSync — Full-Stack Development (2015–Present)",
-    oneLiner: "Long-term full-stack development and cloud infrastructure projects.",
+    id: "wesync-public",
+    title: "Wesync - Full-Stack Developer (Collaboration)",
+    oneLiner: "Bologna (Remote) | 2025 - Present",
     overview:
-      "Over 11 years of continuous full-stack development at WeSync in Bologna, building and maintaining scalable web applications and backend services using .NET, React, and cloud technologies.",
+      "Contributing to digital systems for the Abruzzo region public sector, with a focus on backend services, API integrations, and distributed delivery workflows.",
     tech: {
-      backend: "C# .NET, REST APIs",
-      frontend: "React / TypeScript",
+      backend: "C#/.NET, API integrations",
+      frontend: "React/TypeScript (service integration)",
       database: "SQL Server, PostgreSQL",
-      cloud: "AWS Cloud Services",
+      cloud: "Docker, Docker Compose, CI/CD",
     },
     features: [
-      "Engineered multiple SaaS platforms and enterprise applications from conception to production.",
-      "Designed and implemented CI/CD workflows for continuous integration and automated deployments.",
-      "Optimized system performance and cloud infrastructure for scalability and cost efficiency.",
+      "Contribute to public sector digital systems used by regional stakeholders.",
+      "Develop backend services and API integrations for interconnected platforms.",
+      "Collaborate in distributed teams on scalable architecture and deployments.",
     ],
     challenge:
-      "Maintained code quality and system reliability across diverse projects while mentoring junior developers and adapting to evolving technology stacks and business requirements.",
+      "Balancing reliability, interoperability, and release speed in public sector systems that involve multiple integrations and operational constraints.",
   },
   {
-    id: "bequalise",
-    title: "Bequalise App — SaaS Platform",
-    oneLiner: "Innovation management platform for startups.",
+    id: "ariestech-saas",
+    title: "AriesTech - Full-Stack and Cloud Developer",
+    oneLiner: "Milan | 01/2024 - 01/2025",
     overview:
-      "Full‑stack SaaS platform developed at AriesTech that enables startups to manage innovation initiatives, track progress, and collaborate on strategic goals.",
+      "Built SaaS platforms (Bequalise App and Innovation Match), implementing full-stack features and cloud infrastructure for production deployments.",
     tech: {
-      backend: ".NET 6 (REST APIs)",
+      backend: ".NET 6 REST APIs",
       frontend: "React / TypeScript",
-      database: "SQL Server",
-      cloud: "AWS (EC2, RDS)",
+      database: "SQL Server, Amazon RDS",
+      cloud: "AWS (EC2, RDS, S3, IAM, CloudWatch)",
     },
     features: [
-      "Seamless integration between .NET backend APIs and React/TypeScript frontend.",
-      "CI/CD workflows enabling automated testing and zero‑downtime deployments.",
-      "Cloud-optimized architecture for scalability and cost efficiency.",
+      "Built and integrated REST APIs with React/TypeScript frontend applications.",
+      "Implemented CI/CD pipelines for automated testing and deployment workflows.",
+      "Improved scalability and maintainability through clean architecture patterns.",
     ],
     challenge:
-      "Collaborated with UX designers and product managers to convert complex business requirements into robust, maintainable solutions while ensuring platform scalability and performance.",
+      "Delivered cloud-ready SaaS functionality while keeping deployment pipelines stable and maintainable across backend and frontend layers.",
   },
   {
-    id: "innovation-match",
-    title: "Innovation Match — SaaS Platform",
-    oneLiner: "Matchmaking platform connecting innovation stakeholders.",
+    id: "hays-backend",
+    title: "Hays - Back-End Developer",
+    oneLiner: "Milan | 11/2022 - 06/2023",
     overview:
-      "SaaS platform that facilitates innovation management by matching startups with resources, mentors, and investors to accelerate growth.",
+      "Developed backend services in Java Spring, implementing business logic and database integrations for enterprise applications.",
     tech: {
-      backend: ".NET 6 (REST APIs)",
-      frontend: "React / TypeScript",
-      database: "SQL Server",
-      cloud: "AWS Cloud Infrastructure",
+      backend: "Java Spring",
+      frontend: "REST API consumers",
+      database: "Relational databases",
+      cloud: "Enterprise infrastructure",
     },
     features: [
-      "Intelligent matching algorithm connecting startups with relevant opportunities.",
-      "Responsive design ensuring accessibility across devices.",
-      "Optimized system performance through strategic caching and query optimization.",
+      "Implemented core business logic for enterprise back-end workflows.",
+      "Built and maintained database integrations for operational systems.",
+      "Contributed within Agile teams to deliver production features reliably.",
     ],
     challenge:
-      "Prioritized cloud scalability and cost optimization by leveraging AWS best practices while maintaining code quality and system maintainability across the full stack.",
+      "Maintained performance and consistency while integrating business-critical rules into existing enterprise systems.",
   },
   {
-    id: "enterprise-backend",
-    title: "Enterprise Backend Services — Java Spring",
-    oneLiner: "Scalable backend infrastructure for enterprise applications.",
+    id: "independent-dev",
+    title: "Independent Software Developer",
+    oneLiner: "01/2021 - Present",
     overview:
-      "Backend services built with Java Spring Framework supporting enterprise-scale applications, featuring robust API design, authentication, and data persistence.",
+      "Deliver custom web applications for SMEs using C#, .NET, React, and SQL Server, while collaborating directly with clients on technical delivery.",
     tech: {
-      backend: "Java Spring Framework",
-      frontend: "REST API Consumers",
-      database: "Relational Databases",
-      cloud: "Enterprise Infrastructure",
+      backend: "C#, .NET, REST APIs",
+      frontend: "React",
+      database: "SQL Server",
+      cloud: "AWS",
     },
     features: [
-      "RESTful API design following enterprise standards and best practices.",
-      "Role-based authentication and authorization mechanisms.",
-      "Optimized database queries and connection pooling for high throughput.",
+      "Built tailored applications aligned with SME operational requirements.",
+      "Designed scalable APIs and optimized database performance.",
+      "Led small initiatives from planning to deployment with client collaboration.",
     ],
     challenge:
-      "Designed and implemented backend services tailored to support enterprise-scale applications with emphasis on reliability, security, and performance at scale.",
+      "Managing end-to-end delivery across product decisions, architecture, and infrastructure while maintaining long-term code quality.",
+  },
+  {
+    id: "finops-ai",
+    title: "FinOps AI Platform (Personal Project)",
+    oneLiner: "Selected Project | 2025 - Present",
+    overview:
+      "Designing a cloud cost optimization platform powered by AI, focused on usage intelligence, cost analysis, and actionable recommendations.",
+    tech: {
+      backend: ".NET services, cloud-native design",
+      frontend: "Analytics dashboard",
+      database: "Usage and cost data pipelines",
+      cloud: "AWS (with planned GCP/Azure expansion)",
+    },
+    features: [
+      "Build backend services for ingestion, analysis, and optimization insights.",
+      "Deploy scalable cloud infrastructure with automation-first workflows.",
+      "Implement cost analysis and recommendation engines for FinOps decisions.",
+    ],
+    challenge:
+      "Evolving from a single-cloud architecture toward a multi-cloud model while preserving consistent data, insights, and operational controls.",
   },
 ];
 
@@ -102,85 +122,59 @@ function ProjectRow({ project }: { project: Project }) {
       id={project.id}
       className="group rounded-xl border border-zinc-800 bg-gradient-to-br from-zinc-900 via-zinc-950 to-black p-8 transition-all duration-300 hover:border-zinc-700 hover:shadow-xl hover:shadow-zinc-900/50"
     >
-      {/* Header */}
-      <div className="space-y-2 mb-6">
+      <div className="mb-6 space-y-2">
         <div className="flex items-start justify-between gap-4">
           <div>
-            <h3 className="text-2xl font-bold text-zinc-50 group-hover:text-white transition-colors">
+            <h3 className="text-2xl font-bold text-zinc-50 transition-colors group-hover:text-white">
               {project.title}
             </h3>
-            <p className="text-sm text-zinc-400 mt-1">{project.oneLiner}</p>
+            <p className="mt-1 text-sm text-zinc-400">{project.oneLiner}</p>
           </div>
         </div>
       </div>
 
-      {/* Overview */}
-      <p className="text-zinc-300 leading-relaxed mb-6 text-sm">
-        {project.overview}
-      </p>
+      <p className="mb-6 text-sm leading-relaxed text-zinc-300">{project.overview}</p>
 
-      {/* Tech Stack */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8 p-4 bg-zinc-800/30 rounded-lg border border-zinc-700/50">
+      <div className="mb-8 grid grid-cols-2 gap-4 rounded-lg border border-zinc-700/50 bg-zinc-800/30 p-4 md:grid-cols-4">
         <div>
-          <p className="text-xs font-semibold text-zinc-400 uppercase tracking-wider">Backend</p>
-          <p className="text-sm text-zinc-200 mt-1">{project.tech.backend}</p>
+          <p className="text-xs font-semibold uppercase tracking-wider text-zinc-400">Backend</p>
+          <p className="mt-1 text-sm text-zinc-200">{project.tech.backend}</p>
         </div>
         <div>
-          <p className="text-xs font-semibold text-zinc-400 uppercase tracking-wider">Frontend</p>
-          <p className="text-sm text-zinc-200 mt-1">{project.tech.frontend}</p>
+          <p className="text-xs font-semibold uppercase tracking-wider text-zinc-400">Frontend</p>
+          <p className="mt-1 text-sm text-zinc-200">{project.tech.frontend}</p>
         </div>
         <div>
-          <p className="text-xs font-semibold text-zinc-400 uppercase tracking-wider">Database</p>
-          <p className="text-sm text-zinc-200 mt-1">{project.tech.database}</p>
+          <p className="text-xs font-semibold uppercase tracking-wider text-zinc-400">Database</p>
+          <p className="mt-1 text-sm text-zinc-200">{project.tech.database}</p>
         </div>
         <div>
-          <p className="text-xs font-semibold text-zinc-400 uppercase tracking-wider">Cloud</p>
-          <p className="text-sm text-zinc-200 mt-1">{project.tech.cloud}</p>
+          <p className="text-xs font-semibold uppercase tracking-wider text-zinc-400">Cloud</p>
+          <p className="mt-1 text-sm text-zinc-200">{project.tech.cloud}</p>
         </div>
       </div>
 
-      {/* Features and Challenges */}
-      <div className="grid md:grid-cols-2 gap-8 mb-8">
-        {/* Features */}
+      <div className="mb-8 grid gap-8 md:grid-cols-2">
         <div>
-          <h4 className="text-sm font-semibold text-zinc-300 uppercase tracking-wider mb-4">
-            Key Features
+          <h4 className="mb-4 text-sm font-semibold uppercase tracking-wider text-zinc-300">
+            Highlights
           </h4>
           <ul className="space-y-3">
             {project.features.map((feat) => (
               <li key={feat} className="flex gap-3">
-                <span className="mt-1 h-2 w-2 rounded-full bg-pink-500 flex-shrink-0" />
+                <span className="mt-1 h-2 w-2 flex-shrink-0 rounded-full bg-pink-500" />
                 <span className="text-sm text-zinc-300">{feat}</span>
               </li>
             ))}
           </ul>
         </div>
 
-        {/* Challenges */}
         <div>
-          <h4 className="text-sm font-semibold text-zinc-300 uppercase tracking-wider mb-4">
-            Challenges &amp; Approach
+          <h4 className="mb-4 text-sm font-semibold uppercase tracking-wider text-zinc-300">
+            Challenges and Approach
           </h4>
-          <p className="text-sm text-zinc-300 leading-relaxed">
-            {project.challenge}
-          </p>
+          <p className="text-sm leading-relaxed text-zinc-300">{project.challenge}</p>
         </div>
-      </div>
-
-      {/* Links */}
-      <div className="flex flex-wrap gap-4 pt-4 border-t border-zinc-700">
-        <a
-          href="#"
-          className="text-sm font-medium text-zinc-300 hover:text-white transition-colors flex items-center gap-1"
-        >
-          Live demo →
-        </a>
-        <a
-          href="#"
-          className="text-sm font-medium text-zinc-300 hover:text-white transition-colors flex items-center gap-1"
-        >
-          GitHub repository →
-        </a>
       </div>
     </article>
   );
@@ -188,14 +182,14 @@ function ProjectRow({ project }: { project: Project }) {
 
 export function ProjectsSection() {
   return (
-    <section id="projects" className="bg-zinc-950 py-20 px-6">
+    <section id="projects" className="bg-zinc-950 px-6 py-20">
       <div className="mx-auto max-w-6xl">
         <header className="mb-16">
-          <h2 className="text-4xl sm:text-5xl font-bold text-zinc-50 mb-2">
-            Selected Projects
+          <h2 className="mb-2 text-4xl font-bold text-zinc-50 sm:text-5xl">
+            Projects and Experience
           </h2>
-          <p className="text-zinc-400 text-lg">
-            A selection of recent work spanning full-stack development, cloud architecture, and UI design.
+          <p className="text-lg text-zinc-400">
+            Professional roles and selected work across full-stack engineering, cloud platforms, and system architecture.
           </p>
         </header>
 
@@ -208,4 +202,3 @@ export function ProjectsSection() {
     </section>
   );
 }
-
