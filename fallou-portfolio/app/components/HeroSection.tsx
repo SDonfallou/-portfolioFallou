@@ -1,58 +1,59 @@
+﻿"use client";
+
+import Image from "next/image";
+
 export function HeroSection() {
   return (
-    <section className="mx-auto max-w-5xl px-6 py-24 sm:py-32 lg:py-40">
-      <div className="text-center">
-        <div className="mb-6 inline-block">
-          <span className="relative inline-block">
-            <h1 className="relative text-5xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 sm:text-6xl md:text-7xl lg:text-8xl">
-              Fallou Sow
-            </h1>
-            <span className="absolute -inset-1 block rounded-lg bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 opacity-20 blur-xl" />
-          </span>
-        </div>
-        <p className="mx-auto mt-6 max-w-2xl text-xl text-zinc-600 dark:text-zinc-300 sm:text-2xl">
-          Full‑stack developer specializing in{" "}
-          <span className="font-semibold text-zinc-900 dark:text-zinc-100">.NET</span>,{" "}
-          <span className="font-semibold text-zinc-900 dark:text-zinc-100">React</span> &{" "}
-          <span className="font-semibold text-zinc-900 dark:text-zinc-100">cloud‑native</span> solutions
-        </p>
-        <div className="mt-6 flex flex-wrap items-center justify-center gap-3 text-sm font-medium text-zinc-500 dark:text-zinc-400 sm:text-base">
-          {[".NET", "React", "AWS", "SQL", "CI/CD"].map((tech) => (
-            <span
-              key={tech}
-              className="rounded-full bg-white px-4 py-1.5 shadow-sm ring-1 ring-zinc-200 dark:bg-zinc-800 dark:ring-zinc-700"
-            >
-              {tech}
+    <section className="relative min-h-screen bg-zinc-950 text-zinc-50 flex items-center justify-center px-6 py-16">
+      {/* Profile Photo in top left */}
+      <div className="absolute top-8 left-8 w-12 h-12 rounded-full overflow-hidden border-2 border-zinc-700">
+        <Image
+          src="/profile.jpg"
+          alt="Profile"
+          width={48}
+          height={48}
+          className="w-full h-full object-cover"
+        />
+      </div>
+
+      <div className="max-w-5xl w-full flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+        {/* Left: Text content */}
+        <div className="flex-1 text-center lg:text-left">
+          <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold tracking-tight leading-tight">
+            <span className="text-white">FALLOU</span>
+            {" "}
+            <span className="bg-gradient-to-r from-pink-300 to-pink-500 bg-clip-text text-transparent">
+              SOW
             </span>
-          ))}
+          </h1>
+
+          <p className="mt-6 text-lg sm:text-xl text-zinc-400 font-light">
+            Web Designer / Developer
+          </p>
+
+          <a
+            href="#contact"
+            className="inline-block mt-10 px-6 py-3 border-2 border-zinc-300 text-zinc-50 font-medium rounded-full hover:bg-zinc-50 hover:text-zinc-950 transition-colors"
+          >
+            Get in touch {"\u2192"}
+          </a>
         </div>
-        <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-          <a
-            href="#projects"
-            className="group relative overflow-hidden rounded-xl bg-gradient-to-r from-blue-600 to-purple-600 px-8 py-4 text-sm font-semibold text-white shadow-lg shadow-blue-500/50 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-blue-500/50"
-          >
-            <span className="relative z-10">View Projects</span>
-            <span className="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-          </a>
-          <a
-            href="https://github.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group rounded-xl border-2 border-zinc-300 bg-white px-8 py-4 text-sm font-semibold text-zinc-700 transition-all duration-300 hover:border-zinc-400 hover:bg-zinc-50 hover:shadow-lg dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-300 dark:hover:border-zinc-600 dark:hover:bg-zinc-700"
-          >
-            GitHub
-          </a>
-          <a
-            href="https://linkedin.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group rounded-xl border-2 border-zinc-300 bg-white px-8 py-4 text-sm font-semibold text-zinc-700 transition-all duration-300 hover:border-zinc-400 hover:bg-zinc-50 hover:shadow-lg dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-300 dark:hover:border-zinc-600 dark:hover:bg-zinc-700"
-          >
-            LinkedIn
-          </a>
+
+        {/* Right: Large profile image */}
+        <div className="flex-1 flex justify-center lg:justify-end">
+          <div className="relative w-64 h-80 sm:w-72 sm:h-96 rounded-3xl overflow-hidden">
+            <Image
+              src="/profile.jpg"
+              alt="Fallou Sow"
+              fill
+              className="object-cover"
+              priority
+            />
+          </div>
         </div>
       </div>
     </section>
   );
 }
+
 
